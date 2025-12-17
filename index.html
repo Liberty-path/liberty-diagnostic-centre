@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liberty Diagnostic Centre</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8fbff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0b5ed7, #d90429);
+      color: #fff;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .logo span {
+      color: #ffeb3b;
+    }
+    .menu {
+      font-size: 24px;
+      cursor: pointer;
+    }
+    nav {
+      display: none;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    nav a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #0b5ed7;
+      border-bottom: 1px solid #eee;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #f1f5ff;
+    }
+    .container {
+      padding: 16px;
+    }
+    h1 {
+      font-size: 22px;
+      color: #d90429;
+    }
+    .highlight {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .labs {
+      margin-top: 20px;
+    }
+    .lab {
+      font-weight: 800;
+      font-size: 20px;
+      margin: 10px 0;
+      padding: 10px 14px;
+      border-radius: 8px;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    .metropolis { color: green; }
+    .srl { color: #0b5ed7; }
+    .thyrocare { color: red; }
+    .hy { color: green; }
+    ul.tests {
+      padding-left: 20px;
+      font-weight: bold;
+    }
+    footer {
+      background: #0b5ed7;
+      color: #fff;
+      padding: 16px;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #ffeb3b;
+      text-decoration: none;
+      display: block;
+      margin: 4px 0;
+      font-weight: bold;
+    }
+    .whatsapp {
+      position: fixed;
+      right: 15px;
+      bottom: 70px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-align: center;
+      font-size: 14px;
+      z-index: 9999;
+      pointer-events: auto;
+    }
+
+    .callnow {
+      position: fixed;
+      right: 15px;
+      bottom: 20px;
+      background: #0b5ed7;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-align: center;
+      font-size: 14px;
+      z-index: 9999;
+      pointer-events: auto;
+    }
+
+    .callnow {
+      position: fixed;
+      right: 15px;
+      bottom: 20px;
+      background: #0b5ed7;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-align: center;
+      font-size: 14px;
+    }
+    @media (min-width: 768px) {
+      nav { display: block; }
+      .menu { display: none; }
+      nav a { display: inline-block; border: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    🔬 <span>Liberty Diagnostic Centre</span>
+  </div>
+  <div class="menu" onclick="toggleMenu()">⋮</div>
+</header>
+
+<nav id="nav">
+  <a href="book-appointment.html">Book Appointment</a>
+  <a href="packages.html">Packages</a>
+  <a href="offers.html">Offers</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="price-list.html">Price List</a>
+</nav>
+
+<div class="container">
+  <h1>Welcome to <span style="color:#0b5ed7">Liberty</span> <span style="color:#d90429">Diagnostic Centre</span></h1>
+  <p class="highlight">Where you can trust 100% genuine reports verified by an MD Pathologist.</p>
+  <p class="highlight">All blood test done here – just WhatsApp or fill details to book appointment.</p>
+
+  <div class="labs">
+    <p class="highlight">In Demand Labs Also Available</p>
+    <div class="lab metropolis">🧪 Metropolis</div>
+    <div class="lab srl">🧬 SRL</div>
+    <div class="lab hy">🔬 Hy Patho Lab</div>
+    <div class="lab thyrocare">🔬 Thyrocare</div>
+  </div>
+
+  <p class="highlight">All Blood Tests Done Here</p>
+  <ul class="tests">
+    <li>CBC</li>
+    <li>MP</li>
+    <li>Widal</li>
+    <li>Thyroid</li>
+    <li>HbA1C</li>
+    <li>Sugar</li>
+    <li>Urine</li>
+    <li>Semen Analysis</li>
+    <li>Body Profile</li>
+    <li>Heart Profile</li>
+    <li>Kidney Profile</li>
+    <li>Liver Function Test</li>
+  </ul>
+
+  <p class="highlight">Just drop a message or call <br> 88578 55264 / 9930104048</p>
+</div>
+
+<footer>
+  <p><strong>Book your appointment fast</strong></p>
+  <p>Free Home Visit Service Available Anytime</p>
+  <p>88578 55264 / +91 89759 31141 / 9930104048</p>
+
+  <a href="book-appointment.html">Book Appointment</a>
+  <a href="packages.html">Packages</a>
+  <a href="offers.html">Offers</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="price-list.html">Price List</a>
+</footer>
+
+<!-- Fixed WhatsApp Chat Button (MOBILE ONLY – DIRECT) -->
+<a class="whatsapp" href="whatsapp://send?phone=918857855264&text=Hello%20Liberty%20Diagnostic%20Centre%2C%20I%20want%20to%20book%20a%20blood%20test">
+  WhatsApp Chat
+</a>
+
+<!-- Fixed Call Now Button (MOBILE DIRECT CALL) -->
+<a class="callnow" href="tel:+918857855264">Call Now</a>
+
+<!-- Fixed Call Now Button -->
+<a class="callnow" href="tel:8857855264">Call Now</a>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('nav');
+    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>

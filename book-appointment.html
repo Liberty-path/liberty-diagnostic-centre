@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Liberty Diagnostic Centre</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8fbff; color:#333; }
+    header { background: linear-gradient(90deg, #0b5ed7, #d90429); color:#fff; padding:14px 16px; font-size:22px; font-weight:bold; }
+    .container { padding:16px; }
+    h1 { color:#d90429; font-size:24px; }
+    form { background:#fff; padding:16px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+    label { font-weight:bold; display:block; margin-top:12px; }
+    input, select, textarea { width:100%; padding:10px; margin-top:6px; border:1px solid #ccc; border-radius:6px; font-size:14px; }
+    button { margin-top:16px; background:#0b5ed7; color:#fff; border:none; padding:12px; font-size:16px; border-radius:6px; font-weight:bold; width:100%; cursor:pointer; }
+    button:hover { background:#084298; }
+    .note { margin-top:20px; background:#fff8c4; padding:12px; font-weight:bold; border-radius:6px; }
+    .contact { margin-top:20px; font-weight:bold; }
+    footer { background:#0b5ed7; color:#fff; padding:16px; margin-top:30px; }
+    footer p { margin:6px 0; font-weight:bold; }
+    .whatsapp, .callnow {
+      position: fixed; right: 15px; padding: 14px 18px; border-radius: 50px; font-weight: bold;
+      text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); text-align: center; z-index:9999;
+    }
+    .whatsapp { background:#25D366; color:#fff; bottom:70px; }
+    .callnow { background:#0b5ed7; color:#fff; bottom:20px; }
+  </style>
+    <style>
+header {
+  background: linear-gradient(90deg, #0b5ed7, #d90429);
+  color: #fff;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo span {
+  color: #ffeb3b;
+}
+.menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+nav {
+  display: none;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+nav a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #0b5ed7;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+}
+nav a:hover {
+  background: #f1f5ff;
+}
+@media (min-width: 768px) {
+  nav { display: block; }
+  .menu { display: none; }
+  nav a { display: inline-block; border: none; }
+}
+</style>
+
+</head>
+
+    <script>
+function toggleMenu() {
+  const nav = document.getElementById('nav');
+  nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+<body><header>
+  <div class="logo">
+    🔬 <span>Liberty Diagnostic Centre</span>
+  </div>
+  <div class="menu" onclick="toggleMenu()">⋮</div>
+</header>
+
+<nav id="nav">
+  <a href="index.html">Home</a>
+  <a href="book-appointment.html">Book Appointment</a>
+  <a href="packages.html">Packages</a>
+  <a href="offers.html">Offers</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="price-list.html">Price List</a>
+</nav>
+
+
+<header>Book Appointment</header>
+
+<div class="container">
+  <h1>Appointment Booking</h1>
+
+  <form onsubmit="sendWhatsApp(); return false;">
+    <label>Your Name</label>
+    <input type="text" id="name" required>
+
+    <label>Age</label>
+    <input type="number" id="age" required>
+
+    <label>Gender</label>
+    <select id="gender" required>
+      <option value="">Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label>Tests / Profile Name</label>
+    <textarea id="tests" required></textarea>
+
+    <label>Location / Address</label>
+    <textarea id="location" required></textarea>
+
+    <button type="submit">Send Appointment on WhatsApp</button>
+  </form>
+
+  <div class="note">
+    If you don't want any headache just WhatsApp 👇<br><br>
+    <strong>Your Name<br>Age<br>Gender<br>Tests<br>Location</strong>
+  </div>
+
+  <div class="contact">
+    📞 88578 55264<br>
+    📞 9930104048<br>
+    📞 +91 89759 31141
+  </div>
+</div>
+
+<footer>
+  <p>Email: libertypathology@gmail.com</p>
+</footer>
+
+<a class="whatsapp" href="whatsapp://send?phone=918857855264">WhatsApp</a>
+<a class="callnow" href="tel:+918857855264">Call Now</a>
+
+<script>
+function sendWhatsApp() {
+  const name = document.getElementById('name').value;
+  const age = document.getElementById('age').value;
+  const gender = document.getElementById('gender').value;
+  const tests = document.getElementById('tests').value;
+  const location = document.getElementById('location').value;
+
+  const message = `Appointment Request%0AName: ${name}%0AAge: ${age}%0AGender: ${gender}%0ATests: ${tests}%0ALocation: ${location}`;
+  window.location.href = `whatsapp://send?phone=918857855264&text=${message}`;
+}
+</script>
+
+</body>
+</html>

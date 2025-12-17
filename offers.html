@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offers - Liberty Diagnostic Centre</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f8fbff; color:#333; }
+    header { background: linear-gradient(90deg,#0b5ed7,#d90429); color:#fff; padding:14px 16px; font-size:22px; font-weight:bold; }
+    .container { padding:16px; }
+    h1 { text-align:center; color:#d90429; font-size:26px; }
+    .offer-box { background:#fff; padding:16px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-top:20px; }
+    .discount { background:#ffeb3b; color:#000; font-size:22px; font-weight:bold; text-align:center; padding:10px; border-radius:8px; margin-bottom:16px; }
+    .tests { display:grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap:12px; }
+    .test { background:#e3f2fd; border-left:6px solid #0b5ed7; padding:12px; font-size:18px; font-weight:bold; border-radius:6px; text-align:center; }
+    .cta { margin-top:20px; text-align:center; font-size:20px; font-weight:bold; color:#d90429; }
+    .contact { margin-top:20px; background:#0b5ed7; color:#fff; padding:16px; border-radius:10px; font-weight:bold; text-align:center; }
+    .contact p { margin:6px 0; }
+    footer { margin-top:30px; text-align:center; font-weight:bold; color:#0b5ed7; }
+    .whatsapp, .callnow {
+      position: fixed; right: 15px; padding: 14px 18px; border-radius: 50px;
+      font-weight: bold; text-decoration: none; box-shadow:0 4px 10px rgba(0,0,0,0.3);
+      z-index:9999; text-align:center;
+    }
+    .whatsapp { background:#25D366; color:#fff; bottom:70px; }
+    .callnow { background:#0b5ed7; color:#fff; bottom:20px; }
+ <style>
+header {
+  background: linear-gradient(90deg, #0b5ed7, #d90429);
+  color: #fff;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo span {
+  color: #ffeb3b;
+}
+.menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+nav {
+  display: none;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+nav a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #0b5ed7;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+}
+nav a:hover {
+  background: #f1f5ff;
+}
+@media (min-width: 768px) {
+  nav { display: block; }
+  .menu { display: none; }
+  nav a { display: inline-block; border: none; }
+}
+</style>
+
+    </style>
+</head>
+<script>
+function toggleMenu() {
+  const nav = document.getElementById('nav');
+  nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+}
+</script>
+
+<body> 
+<header>
+  <div class="logo">
+    🔬 <span>Liberty Diagnostic Centre</span>
+  </div>
+  <div class="menu" onclick="toggleMenu()">⋮</div>
+</header>
+
+<nav id="nav">
+  <a href="index.html">Home</a>
+  <a href="book-appointment.html">Book Appointment</a>
+  <a href="packages.html">Packages</a>
+  <a href="offers.html">Offers</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="price-list.html">Price List</a>
+</nav>
+
+<header>Special Offers</header>
+
+<div class="container">
+  <h1>🔥 Limited Period Offer 🔥</h1>
+
+  <div class="offer-box">
+    <div class="discount">🎉 FLAT 50% OFF ON ALL TESTS 🎉</div>
+
+    <div class="tests">
+      <div class="test">Thyroid Profile</div>
+      <div class="test">HbA1C</div>
+      <div class="test">PT INR</div>
+      <div class="test">ANC Profile</div>
+      <div class="test">H.H.H</div>
+      <div class="test">Full Body Checkup</div>
+      <div class="test">Kidney Profile</div>
+      <div class="test">Liver Profile</div>
+      <div class="test">And All Other Tests</div>
+    </div>
+
+    <div class="cta">Book Your Appointment Fast ⏳</div>
+  </div>
+
+  <div class="contact">
+    <p>📞 88578 55264</p>
+    <p>📞 9930104048</p>
+    <p>📞 +91 89759 31141</p>
+    <p>📧 libertypathology@gmail.com</p>
+  </div>
+</div>
+
+<footer>Liberty Diagnostic Centre – Trusted Reports</footer>
+
+<a class="whatsapp" href="whatsapp://send?phone=918857855264&text=Hello%20Liberty%20Diagnostic%20Centre%2C%20I%20want%20to%20know%20about%20current%20offers">WhatsApp</a>
+<a class="callnow" href="tel:+918857855264">Call Now</a>
+
+</body>
+</html>
